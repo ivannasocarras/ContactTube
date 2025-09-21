@@ -1,6 +1,9 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sign in Page.">
 	<title>ContactTube</title>
 	<link rel="icon" href="images/ytLogo.png" type="image/png">
 	<script type="text/javascript" src="js/code.js"></script>
@@ -56,9 +59,9 @@
     <div class="right-info">
         <h3>Sign in</h3>
         <form id="login" onsubmit="return false;">
-            <label>Username</label>
+            <label for="loginName">Username</label>
             <input type="text" class="input-field" id="loginName" name="username">
-            <label>Password</label>
+            <label for="loginPassword">Password</label>
             <input type="password" class="input-field" id="loginPassword" name="password" required pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[!@#$%^&*]).{8,32}">
 			<span id="loginResult" style="color: red; font-size: 14px;"></span>
         	<br>
