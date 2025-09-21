@@ -1,6 +1,10 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>ContactTube</title>
+	<meta charset="UTF-8">
+    <title>ContactTube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main Page">
 	<script type="text/javascript" src="js/code.js"></script>
 	<link rel="icon" href="images/ytLogo.png" type="image/png">
     <link href="css/styles.css" rel="stylesheet">	
@@ -26,7 +30,7 @@
         <div class="header-center">
             <div class="search-container">
                 <input type="text" id="headerSearchInput" class="search-bar" placeholder="Search Contacts..." onkeyup="loadContacts()">
-                <button class="search-button" onclick="loadContacts()">
+                <button class="search-button" onclick="loadContacts()" aria-label="Search Contacts">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
@@ -45,7 +49,7 @@
             <li id="contactsTab" class="active">
                 <a href="#" onclick="showView('contacts')">
                     <span class="icon">
-                        <img src="images/popular.png" alt="Contacts">
+                        <img src="images/popular.png" alt="">
                     </span> 
                     ContactTube Contacts
                 </a>
@@ -54,7 +58,7 @@
             <li id="aboutTab">
                 <a href="#" onclick="showView('about')">
                     <span class="icon">
-                        <img src="images/spotlight.png" alt="About Us">
+                        <img src="images/spotlight.png" alt="">
                     </span> 
                     About Us
                 </a>
